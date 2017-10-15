@@ -1,0 +1,304 @@
+/* font-family: "SegoeUIRegular"; */
+@font-face {
+    font-family: "SegoeUIRegular";
+    src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+    src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+    url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUIBold"; */
+@font-face {
+    font-family: "SegoeUIBold";
+    src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
+    src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
+    url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUIItalic"; */
+@font-face {
+    font-family: "SegoeUIItalic";
+    src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
+    src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
+    url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUILight"; */
+@font-face {
+    font-family: "SegoeUILight";
+    src: url("../fonts/SegoeUILight/SegoeUILight.eot");
+    src: url("../fonts/SegoeUILight/SegoeUILight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+    url("../fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUISemiBold"; */
+@font-face {
+    font-family: "SegoeUISemiBold";
+    src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
+    src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
+    url("../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+	margin: 0;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+}
+.main img {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 10%;
+}
+.btn_begin {
+	border-radius: 30px;
+	background: #3498db;
+	padding: 3px 0 10px;
+	width: 250px;
+	font-size: 25px;
+	color: white;
+	font-family: "SegoeUILight";
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20%;
+	transition: background 0.3s ease-out;
+}
+.btn_begin:hover {
+	background: #3982b3;
+}
+.title_screen {
+	font-size: 50px;
+	font-family: "SegoeUIBold";
+	color: #00346a;
+	text-align: center;
+}
+.input {
+	position: fixed;
+	width: 100%;
+	top: 40%;
+	transform: translateY(-50%);
+}
+.clear::after {
+	content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.input .team {
+	font-size: 40px;
+	font-family: "SegoeUIBold";
+	color: #00346a;
+	text-align: center;
+}
+.input .first {
+	float: left;
+	width:50%;
+	text-align: center;
+}
+.input .second {
+	float: right;
+	width:50%;
+	text-align: center;
+}
+.input input {
+	background-color: transparent;
+	color: #00346a;
+	width: 80%;
+	border-style : solid;
+	border: 0;
+	border-bottom: 1px solid #00346a;
+	font-size: 40px;
+	font-family: "SegoeUIItalic";
+	text-align: center;
+}
+
+.game {
+	display: flex;
+	flex-direction: column;
+	height: 100%;	
+	
+}
+.header_screen {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	flex: 0 0 auto;
+}
+.first_points, .second_points {
+	border-radius: 20px;
+	background: #1abc9c;
+	padding: 1px 20px 4px;
+	font-size: 30px;
+	color: white;
+	font-family: "SegoeUIRegular";
+	text-align: center;
+}
+.first_points{
+	margin-left: 5px;
+}
+.second_points {
+	margin-right: 5px;
+}
+.first_name, .second_name {
+	color: #00346a;
+	font-family: "SegoeUIBold";
+	font-size: 30px;
+	width: 100%;
+}
+.first_name {
+	text-align: right;
+	padding-right: 5px;
+}
+.second_name {
+	text-align: left;
+	padding-left: 5px;
+}
+.middle_screen {
+	width: 100%;
+	flex: 1 1 auto;
+	height: 0;
+}
+.middle_screen table {
+	border: 3px solid #e48d84;
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	font-size: 40px;
+	font-family: "SegoeUIRegular";
+	color: #00346a;
+}
+.tasks tr td {
+	border: 2px solid  #e48d84;
+	text-align: center;
+}
+
+.tasks tr td:first-child {
+	background: #e48d84;
+	color: white;
+	text-align: left;
+	width: 400px;
+	font-family: "SegoeUISemiBold";
+}
+.tasks tr:nth-child(-n+4) td:first-child {
+	border-bottom: 2px solid white;
+}
+.tasks tr td a {
+	text-decoration: none;
+	color: #00346a;
+	visibility: visible; 
+}
+.tasks tr td a:hover {
+	text-decoration: underline;
+	color: #00346a;
+}
+.footer_screen {
+	width: 100%;
+	display: flex;
+	flex: 0 0 auto;
+	height: 60px;
+	align-items: center;
+}
+.btn a {
+	border-radius: 30px;
+	background: #3498db;
+	padding: 3px 50px 10px;
+	font-size: 25px;
+	color: white;
+	font-family: "SegoeUILight";
+	transition: background 0.3s ease-out;
+	text-align: center;
+	text-decoration: none;
+}
+.btn a:hover {
+	background: #3982b3;
+}
+.center{
+	margin: 0 auto;
+}
+.task {
+	display: flex;
+	flex-direction: column;	
+	height: 100%;
+	justify-content: space-between;
+}
+.task .header {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	height: 100%;
+}
+.task .header .title {
+	font-size: 50px;
+	font-family: "SegoeUIBold";
+	color: #00346a;
+	text-align: center;
+}
+.task .result {
+	display: flex;
+	flex-direction: column;	
+	font-size: 50px;
+	font-family: "SegoeUIBold";
+	color: #00346a;
+	text-align: center;
+	flex: 0 0 auto;
+	margin-bottom: 10px;
+}
+.result .buttons {
+	display: flex;
+	justify-content: space-around;
+}
+.result .buttons a {
+	border-radius: 30px;
+	background: #3498db;
+	padding: 3px 50px 10px;
+	font-size: 25px;
+	color: white;
+	font-family: "SegoeUILight";
+	transition: background 0.3s ease-out;
+	text-align: center;
+	text-decoration: none;
+}
+.result .buttons a:hover {
+	background: #3982b3;
+}
+.win {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.win .header {
+	flex: 0 0 auto;
+	font-size: 50px;
+	font-family: "SegoeUIBold";
+	color: #00346a;
+	text-align: center;
+}
+.win .vasserman {
+	flex: 1 1 auto;
+	height: 100%;
+	text-align: center;
+}
+.vasserman img {  	
+	height: 75%;
+	width: auto;
+}
